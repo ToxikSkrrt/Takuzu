@@ -17,7 +17,7 @@ type `./game_text <filename>` to play a game (the `<filename>` parameter is opti
 - Type `y` to redo a move
 - Type `r` to restart
 - Type `q` to quit
-- Type `s <filename>` to save the game inside a file named `<filename>` 
+- Type `s <filename>` to save the current game inside a file named `<filename>` 
 - Type `h` to display help
 
 You can also play a solver version with `game_solve` :
