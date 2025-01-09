@@ -1,6 +1,20 @@
-# takuzu-02e
+# Takuzu
 
-The game Takuzu is a single-player logic puzzle.
+## Description
+This project is a single-player logic puzzle game made in C. You can see the rules below.
+
+## How to use
+1) Open a terminal in the "build" folder
+2) Type `cmake ..` then `make`
+3) Then you can chose to execute 2 versions of the game : one in the terminal (`game_text`) or one in a graphic window (`game_sdl`)
+
+### Terminal version
+- Example : if you want to put a white (equivalent to '0') at the coordinate (0,0), you can type `w 0 0`
+
+## Other projects
+Check all my projects on this [page](https://github.com/ToxikSkrrt/Projects).
+
+---
 
 ## Rules
 Given a grid of squares, you must fill it with zeros and ones. Some squares are initially provided as clues and are immutable. You must complete the remaining empty squares, according to the following rules.
@@ -78,3 +92,5 @@ Based on this library, our project will provide several programs, including but 
 ## References
 - https://en.wikipedia.org/wiki/Takuzu
 - https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/unruly.html
+
+---
