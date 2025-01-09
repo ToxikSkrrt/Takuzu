@@ -9,10 +9,33 @@ This project is a single-player logic puzzle game made in C. You can see the rul
 3) Then you can chose to execute 2 versions of the game : one in the terminal (`game_text`) or one in a graphic window (`game_sdl`)
 
 ### Terminal version
-- Example : if you want to put a white (equivalent to '0') at the coordinate (0,0), you can type `w 0 0`
+type `./game_text <filename>` to play a game (the `<filename>` parameter is optionnal, if you don't set a .txt file, you will play the default game).
+- Type `w <i> <j>` to put a zero/white at square (i,j)
+- Type `b <i> <j>` to put a one/black at square (i,j)
+- Type `e <i> <j>` to empty square (i,j)
+- Type `z` to undo a move
+- Type `y` to redo a move
+- Type `r` to restart
+- Type `q` to quit
+- Type `s <filename>` to save the game inside a file named `<filename>` 
+- Type `h` to display help
 
-## Other projects
-Check all my projects on this [page](https://github.com/ToxikSkrrt/Projects).
+You can also play a solver version with `game_solve` :
+- type `./game_solve -s <filename_game> <filename_save>` to display a possible solution (if there is at least one) for a game (the game is inside a .txt file). You can also set a second file to save the results in this file.
+- type `./game_solve -c <filename_game> <filename_save>` to display the number of possible solutions for a game. You can also set a second file to save the results in this file.
+
+### Graphic version
+Type `./game_sdl <filename>` to play a game (the `<filename>` parameter is optionnal, if you don't set a .txt file, you will play the default game).  
+You will see 2 types of fruits : watermelons and oranges. Oranges correspond to zero/white and watermelons correspond to one/black.  
+Full fruits are immutable squares and sliced fruits are the zeros and ones you set in the game.
+
+- Click on a square to rotate between orange, watermelon or empty.
+- Press `z` to undo a move
+- Press `y` to redo a move
+- Press `r` to restart
+- Press `ESCAPE` to quit
+- Press `s` to solve the game
+- Press `h` to display help
 
 ---
 
@@ -94,3 +117,6 @@ Based on this library, our project will provide several programs, including but 
 - https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/unruly.html
 
 ---
+
+## Other projects
+Check all my projects on this [page](https://github.com/ToxikSkrrt/Projects).
